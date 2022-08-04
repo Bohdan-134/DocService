@@ -1,0 +1,178 @@
+@import '../utils/main.utils.scss';
+.header {
+    height: 100vh;
+    .header-top {
+        height: 100px;
+        border-bottom: 1px solid #0000000f;
+        @include flex(row, space-around, center);
+        .container {
+            max-width: 1000px;
+            margin: 0px;
+            @include flex(row, center, center);
+        }
+        .lan-wrap {
+            select {
+                padding: 4px 5px;
+                border-radius: 7px;
+                background-color: $COLOR__ORANGE;
+                cursor: pointer;
+                color: $COLOR__WHITE;
+                option {
+                    background-color: $COLOR__ORANGE;
+                }
+            }
+        }
+    }
+    .phone-wrap {
+        @include font(13px, 300, 12px, $COLOR__BLACK);
+        i {
+            margin-right: 5px;
+        }
+        a {
+            position: relative;
+            color: $COLOR__BLACK;
+        }
+        &:hover {
+            a,
+            i {
+                color: $COLOR__ORANGE;
+            }
+        }
+    }
+}
+
+.logo-wrap {
+    margin: 0px 80px;
+    .logo {}
+}
+
+nav {
+    .nav-list {
+        @include flex(row, null, center);
+        .nav-item {
+            margin: 0px 30px;
+            a {
+                position: relative;
+                @include font(15px, 400, 15px, $COLOR__BLACK);
+                &:before {
+                    content: '';
+                    position: absolute;
+                    bottom: -9px;
+                    left: 50%;
+                    transform: translate(-50%) scale(0, 1);
+                    width: 100%;
+                    height: 2px;
+                    border-radius: 2px;
+                    background-color: $COLOR__BLUE;
+                    transition: .3s;
+                }
+                &:hover {
+                    color: $COLOR__BLUE;
+                    &::before {
+                        transform: translate(-50%) scale(1, 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// header-main
+.header-main {
+    height: calc(100vh - 100px);
+    position: relative;
+    @include flex(row, null, center);
+    .container {
+        text-align: center;
+    }
+    .bx {
+        position: absolute;
+        font-size: 40px;
+        filter: blur(1px);
+        color: #8FCCF0;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    .bxs-hourglass-bottom {
+        bottom: 85%;
+        left: 10%;
+        transform: rotate(10deg);
+        color: #565CAC;
+    }
+    .bxs-brightness {
+        bottom: 77%;
+        left: 27%;
+    }
+    .bxs-up-arrow {
+        bottom: 40%;
+        left: 6%;
+        color: #FFCA39;
+    }
+    .bxs-time {
+        bottom: 8%;
+        left: 11%;
+        transform: rotate(45deg);
+    }
+    .bxs-briefcase-alt-2 {
+        bottom: 86%;
+        left: 48%;
+        transform: rotate(341deg);
+        color: #A66413;
+    }
+    .bxs-dryer {
+        bottom: 73%;
+        left: 73%;
+    }
+    .bxs-calendar {
+        bottom: 21%;
+        left: 27%;
+        color: #4C86A8;
+    }
+    .bxs-check-shield {
+        bottom: 85%;
+        right: 8%;
+        transform: rotate(7deg);
+        color: #4C86A8;
+    }
+    .bx-power-off {
+        right: 50%;
+        bottom: 7%;
+        transform: rotate(343deg);
+        color: #34E68B;
+    }
+    .bxs-washer {
+        right: 7%;
+        bottom: 44%;
+        color: #34E68B;
+    }
+    .bx-chip {
+        bottom: 20%;
+        right: 30%;
+        transform: rotate(20deg);
+        color: #FFCE92;
+    }
+    .bxs-cog {
+        right: 8%;
+        bottom: 10%;
+    }
+}
+
+.header-title {
+    font-family: 'Nunito', sans-serif;
+    @include font(50px, 500, 50px, $COLOR__BLUE);
+}
+
+.header-text {
+    margin: 25px 0px 37px;
+    @include font(17px, 300, 20px, $COLOR__BLACK);
+}
+
+#btn-order {
+    padding: 13px 18px;
+    border-radius: 23px;
+    background-color: $COLOR__ORANGE;
+    @include font(15px, 400, 15px, $COLOR__WHITE);
+    &:hover {
+        background-color: #e25c2f;
+    }
+}

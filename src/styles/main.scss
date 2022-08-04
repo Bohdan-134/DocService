@@ -1,4 +1,12 @@
+@import './modules/main.modules.scss';
 @import './utils/main.utils.scss';
 body {
-    background-color: red;
+    background-color: $COLOR__WHITE;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0px 10px;
 }
