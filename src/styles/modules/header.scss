@@ -11,12 +11,13 @@
             @include flex(row, center, center);
         }
         .lan-wrap {
+            padding: 5px 7px;
+            border-radius: 15px;
+            background-color: $COLOR__ORANGE;
+            cursor: pointer;
             select {
-                padding: 4px 5px;
-                border-radius: 7px;
-                background-color: $COLOR__ORANGE;
-                cursor: pointer;
                 color: $COLOR__WHITE;
+                background-color: inherit;
                 option {
                     background-color: $COLOR__ORANGE;
                 }
@@ -87,7 +88,7 @@ nav {
     }
     .bx {
         position: absolute;
-        font-size: 40px;
+        font-size: 25px;
         filter: blur(1px);
         color: #8FCCF0;
         z-index: -1;
@@ -97,7 +98,6 @@ nav {
         bottom: 85%;
         left: 10%;
         transform: rotate(10deg);
-        color: #565CAC;
     }
     .bxs-brightness {
         bottom: 77%;
@@ -106,7 +106,6 @@ nav {
     .bxs-up-arrow {
         bottom: 40%;
         left: 6%;
-        color: #FFCA39;
     }
     .bxs-time {
         bottom: 8%;
@@ -117,7 +116,6 @@ nav {
         bottom: 86%;
         left: 48%;
         transform: rotate(341deg);
-        color: #A66413;
     }
     .bxs-dryer {
         bottom: 73%;
@@ -126,30 +124,25 @@ nav {
     .bxs-calendar {
         bottom: 21%;
         left: 27%;
-        color: #4C86A8;
     }
     .bxs-check-shield {
         bottom: 85%;
         right: 8%;
         transform: rotate(7deg);
-        color: #4C86A8;
     }
     .bx-power-off {
         right: 50%;
         bottom: 7%;
         transform: rotate(343deg);
-        color: #34E68B;
     }
     .bxs-washer {
         right: 7%;
         bottom: 44%;
-        color: #34E68B;
     }
     .bx-chip {
         bottom: 20%;
         right: 30%;
         transform: rotate(20deg);
-        color: #FFCE92;
     }
     .bxs-cog {
         right: 8%;

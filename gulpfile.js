@@ -6,7 +6,7 @@ const htmlmin = require('gulp-htmlmin');
 const sass = require("gulp-sass")(require("sass"));
 const autoprefixer = require('gulp-autoprefixer');
 const cssmin = require('gulp-cssmin');
-const babel = require('gulp-babel');
+//const babel = require('gulp-babel');
 const jsmin = require('gulp-jsmin');
 const webp = require('gulp-webp');
 const browserSync = require("browser-sync").create();
@@ -60,11 +60,11 @@ function styles() {
 function scripts() {
     return gulp
         .src(paths.scripts.src)
-        .pipe(
-            babel({
-                presets: ["@babel/env"],
-            })
-        )
+        /*         .pipe(
+                    babel({
+                        presets: ["@babel/env"],
+                    })
+                ) */
         .pipe(jsmin())
         .pipe(gulp.dest(paths.scripts.dist))
         .pipe(browserSync.stream());
