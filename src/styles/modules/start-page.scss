@@ -1,0 +1,50 @@
+@import '../utils/main.utils.scss';
+.start-page {
+    height: 100vh;
+    padding-top: 100px;
+    position: relative;
+    @include flex(row, null, center);
+    .container {
+        text-align: center;
+    }
+}
+
+.sp-title {
+    font-family: 'Nunito', sans-serif;
+    @include font(50px, 500, 50px, $COLOR__BLUE);
+}
+
+.sp-text {
+    margin: 25px 0px 37px;
+    @include font(17px, 300, 20px, $COLOR__BLACK);
+}
+
+#btn-order {
+    display: inline-block;
+    padding: 13px 18px;
+    border: 1px solid $COLOR__ORANGE;
+    border-radius: 23px;
+    background: none;
+    position: relative;
+    overflow: hidden;
+    transition: .8s;
+    @include font(15px, 400, 15px, $COLOR__WHITE);
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        height: 180%;
+        border-radius: 100% 100% 0 0;
+        background-color: $COLOR__ORANGE;
+        transition: .8s;
+    }
+    &:hover {
+        color: $COLOR__ORANGE;
+        &::before {
+            height: 0%;
+        }
+    }
+}

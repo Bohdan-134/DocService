@@ -1,8 +1,13 @@
 @import '../utils/main.utils.scss';
 .header {
-    height: 100vh;
-    .header-top {
+    .header-content__wrap {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        z-index: 100;
         height: 100px;
+        background-color: $COLOR__WHITE;
         border-bottom: 1px solid #0000000f;
         @include flex(row, space-around, center);
         .container {
@@ -75,97 +80,5 @@ nav {
                 }
             }
         }
-    }
-}
-
-// header-main
-.header-main {
-    height: calc(100vh - 100px);
-    position: relative;
-    @include flex(row, null, center);
-    .container {
-        text-align: center;
-    }
-    .bx {
-        position: absolute;
-        font-size: 25px;
-        filter: blur(1px);
-        color: #8FCCF0;
-        z-index: -1;
-        opacity: 0.7;
-    }
-    .bxs-hourglass-bottom {
-        bottom: 85%;
-        left: 10%;
-        transform: rotate(10deg);
-    }
-    .bxs-brightness {
-        bottom: 77%;
-        left: 27%;
-    }
-    .bxs-up-arrow {
-        bottom: 40%;
-        left: 6%;
-    }
-    .bxs-time {
-        bottom: 8%;
-        left: 11%;
-        transform: rotate(45deg);
-    }
-    .bxs-briefcase-alt-2 {
-        bottom: 86%;
-        left: 48%;
-        transform: rotate(341deg);
-    }
-    .bxs-dryer {
-        bottom: 73%;
-        left: 73%;
-    }
-    .bxs-calendar {
-        bottom: 21%;
-        left: 27%;
-    }
-    .bxs-check-shield {
-        bottom: 85%;
-        right: 8%;
-        transform: rotate(7deg);
-    }
-    .bx-power-off {
-        right: 50%;
-        bottom: 7%;
-        transform: rotate(343deg);
-    }
-    .bxs-washer {
-        right: 7%;
-        bottom: 44%;
-    }
-    .bx-chip {
-        bottom: 20%;
-        right: 30%;
-        transform: rotate(20deg);
-    }
-    .bxs-cog {
-        right: 8%;
-        bottom: 10%;
-    }
-}
-
-.header-title {
-    font-family: 'Nunito', sans-serif;
-    @include font(50px, 500, 50px, $COLOR__BLUE);
-}
-
-.header-text {
-    margin: 25px 0px 37px;
-    @include font(17px, 300, 20px, $COLOR__BLACK);
-}
-
-#btn-order {
-    padding: 13px 18px;
-    border-radius: 23px;
-    background-color: $COLOR__ORANGE;
-    @include font(15px, 400, 15px, $COLOR__WHITE);
-    &:hover {
-        background-color: #e25c2f;
     }
 }

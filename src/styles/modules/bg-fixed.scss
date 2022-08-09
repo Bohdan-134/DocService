@@ -1,0 +1,53 @@
+@import '../utils/main.utils.scss';
+.bg-fixed {
+    position: fixed;
+    z-index: -1;
+    height: calc(100vh - 100px);
+    left: 0px;
+    top: 100px;
+    right: 0px;
+    .bx {
+        position: absolute;
+        font-size: 25px;
+        filter: blur(1px);
+        color: $COLOR__LIGHT-BLUE;
+        z-index: -1;
+        opacity: 0.7;
+    }
+    .bxs-hourglass-bottom {
+        @include bx-sett(85%, 10%, null, 30px);
+    }
+    .bxs-brightness {
+        @include bx-sett(77%, 27%, null, null);
+    }
+    .bxs-up-arrow {
+        @include bx-sett(40%, 6%, null, 30px);
+    }
+    .bxs-time {
+        @include bx-sett(8%, 11%, null, null);
+    }
+    .bxs-briefcase-alt-2 {
+        @include bx-sett(86%, 48%, null, 30px);
+    }
+    .bxs-dryer {
+        @include bx-sett(73%, 73%, null, null);
+    }
+    .bxs-calendar {
+        @include bx-sett(21%, 27%, null, 30px);
+    }
+    .bxs-check-shield {
+        @include bx-sett(85%, null, 8%, null);
+    }
+    .bx-power-off {
+        @include bx-sett(7%, null, 50%, 30px);
+    }
+    .bxs-washer {
+        @include bx-sett(44%, null, 7%, null);
+    }
+    .bx-chip {
+        @include bx-sett(20%, null, 30%, 30px);
+    }
+    .bxs-cog {
+        @include bx-sett(10%, null, 8%, null);
+    }
+}

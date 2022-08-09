@@ -11,3 +11,10 @@
     line-height: $lh;
     color: $cl;
 }
+
+@mixin bx-sett($bm, $lf, $rg, $fz) {
+    bottom: $bm;
+    left: $lf;
+    right: $rg;
+    font-size: $fz;
+}
