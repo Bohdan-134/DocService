@@ -1,0 +1,24 @@
+@import '../utils/main.utils.scss';
+.price {
+    .container {
+        margin-top: 130px;
+    }
+}
+
+.price__list {
+    .price__item {
+        margin: 25px 0;
+        @include flex(row, space-between, null);
+        .service-name {
+            @include font(25px, 700, 20px, #01A1DF);
+        }
+        .points {
+            margin: 0px 5px;
+            flex: 1;
+            border-bottom: 4px dotted #01A1DF;
+        }
+        .service-price {
+            @include font(25px, 700, 20px, #FF6939);
+        }
+    }
+}

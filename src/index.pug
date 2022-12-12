@@ -12,14 +12,22 @@ html(lang="uk")
         link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css' integrity='sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==' crossorigin='anonymous' referrerpolicy='no-referrer')
         // box-icons
         link(href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet')
+        // swiper
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css")
         // style
         link(rel="stylesheet", href="./css/main.css")
         title docservice 
     body
-        include ./pug/modules/header.pug
-        include ./pug/modules/bg-fixed.pug
-        include ./pug/modules/start-page.pug
-        include ./pug/modules/masters.pug
-        script(src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js')
-        script(src='//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js')
-        script(src="./js/main.js")
+        include ./pug/modules/header
+        include ./pug/modules/why-we
+        include ./pug/modules/brands
+        include ./pug/modules/malfunctions
+        include ./pug/modules/price
+        include ./pug/modules/contact
+        // gsap
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js")
+        // swiper
+        script(src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js")
+        script(src="./js/main.js" type="module")

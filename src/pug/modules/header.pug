@@ -1,25 +1,28 @@
 header.header
-    .header-content__wrap
-        .phone-wrap
-            i.fa-solid.fa-phone
-            a(href="tel:+380508005277") +380508005277
+    .bg-header__wrap
+        .bg-header
+    .header-top
+        .phone-btn__wrap
+            a(href="tel:0508005277").phone
+                i.fa-solid.fa-phone
+        nav.navigation
+            ul.navigation-list 
+                li.navigation-item
+                    a(href="/")#why-we Чому ми?
+                li.navigation-item
+                    a(href="/")#malfunctions Несправності
+                li.navigation-item.logo-wrap
+                    a(href="/").logo
+                        include ../../img/logo.svg
+                li.navigation-item
+                    a(href="/")#price Прайс
+                li.navigation-item
+                    a(href="/")#contact Контакти
+        select(name="lang").lang-btn
+            option(value="ua" selected) Укр
+            option(value="ru") Рус
+    .header-main 
         .container 
-            nav
-                ul.nav-list 
-                    li.nav-item
-                        a(href="#") Майстри
-                    li.nav-item 
-                        a(href="#") Прайс
-            .logo-wrap 
-                a(href="/").logo
-                    include ../../img/logo.svg
-            nav 
-                ul.nav-list 
-                    li.nav-item
-                        a(href="#") Питання
-                    li.nav-item
-                        a(href="#") Контакти
-        .lan-wrap 
-            select(name="select")
-                option(value="uk" selected) Укр
-                option(value="ru") Рус
+            h1.header-title Ремонт пральних машин <br> з виїздом додому
+            p.header-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, totam voluptas! Provident aspernatur officiis illum velit dignissimos distinctio unde nostrum libero, ratione modi neque quibusdam placeat consectetur similique fugiat tempore.
+        .container-map__washing-machine

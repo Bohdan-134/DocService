@@ -1,0 +1,15 @@
+@import '../utils/main.utils.scss';
+.brands {
+    height: 200px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.brands-list {
+    position: absolute;
+    left: -100%;
+    @include flex(row, flex-start, center);
+    .brands-item {
+        margin: 0 20px;
+    }
+}

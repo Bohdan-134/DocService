@@ -1,0 +1,51 @@
+section.malfunctions.section
+    h2.h2 Часті несправності пральних машин
+    .container
+        .malfunctions-washing-machine__wrapp
+            .malfunctions-washing-machine__header
+                .malfunctions-washing-machine__header-bg-center
+                .malfunctions-washing-machine__button-center
+                    i.fa-solid.fa-arrow-up
+                    i.fa-solid.fa-arrow-down
+                    i.fa-sharp.fa-solid.fa-power-off
+                    i.fa-solid.fa-rotate
+                    i.fa-solid.fa-temperature-quarter
+                    i.fa-solid.fa-arrow-right-arrow-left
+                    i.fa-solid.fa-play
+                .malfunctions-washing-machine__box
+                    .malfunctions-washing-machine__box-handle
+                ul.malfunctions-washing-machine__buttons-list
+                    li.malfunctions-washing-machine__buttons-item
+                        button
+                    li.malfunctions-washing-machine__buttons-item
+                        button#broken
+                    li.malfunctions-washing-machine__buttons-item
+                        button
+            .malfunctions-washing-machine__main
+                .malfunctions-washing-machine-drum__back-bg
+                    .malfunctions-washing-machine-drum-water__wrap
+                        .malfunctions-washing-machine-drum-water
+                            include ../../img/water-decor-long.svg
+                            include ../../img/water-decor-smal.svg
+                    .malfunctions-washing-machine-drum__handle
+            .malfunctions-washing-machine__footer
+                .malfunctions-washing-machine__foot-left
+                .malfunctions-washing-machine__foot-right
+    .swiper.mySwiper
+        .swiper-wrapper
+            .swiper-slide(data-animation="animation1")
+                button Не зливає воду
+            .swiper-slide(data-animation="animation3")
+                button Не набирає води
+            .swiper-slide(data-animation="animation4")
+                button Не вмикається
+            .swiper-slide(data-animation="animation5")
+                button Не крутить барабан
+            .swiper-slide(data-animation="animation6")
+                button Не гріє воду
+            .swiper-slide(data-animation="animation7")
+                button Шумить чи стукає
+            .swiper-slide(data-animation="animation8")
+                button Зламалася кнопка
+    .swiper-button-prev
+    .swiper-button-next

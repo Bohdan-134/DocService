@@ -1,0 +1,27 @@
+section.contact.section
+    h2.h2 Контакти
+    .container
+        .contact-info
+            h3.contact-h3__title Інформація
+            ul.contact-info__list
+                li.contact-info__item
+                    i.fa-solid.fa-location-dot
+                    span.contact-info__text м. Київ
+                li.contact-info__item
+                    i.fa-solid.fa-clock
+                    span.contact-info__text 8:00 - 18:00
+                li.contact-info__item
+                    i.fa-solid.fa-mobile-button
+                    span.contact-info__text
+                        a(href="tel:+380374889403") +380374889403
+                li.contact-info__item
+                    i.fa-solid.fa-mobile-button
+                    span.contact-info__text
+                        a(href="tel:+380374889403") +380374889403
+        .contact-form__wrap
+            h3.contact-h3__title Залишити заявку
+            form(action="/").contact-form
+                input(type="text" placeholder="Ім'я").i-name
+                input(type="tel" placeholder="Номер телефону").i-phone
+                textarea(name="", cols="30", rows="6" placeholder="Повідомлення")
+                button(type="submit").send-btn Відправити

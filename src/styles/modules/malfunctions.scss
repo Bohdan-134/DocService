@@ -1,0 +1,210 @@
+@import '../utils/main.utils.scss';
+.malfunctions {
+    position: relative;
+    background-color: #01A1DF;
+    .h2 {
+        color: #fff;
+    }
+    .container {
+        margin-top: 120px;
+        @include flex(row, center, center);
+    }
+}
+
+// swiper
+.swiper {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+}
+
+.swiper-slide {
+    text-align: center;
+    button {
+        background-color: transparent;
+        text-align: center;
+        @include font(25px, 700, 20px, #fff);
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: #0096D0;
+    border-radius: 50%;
+    transition: .5s;
+    &::after {
+        color: white;
+        font-size: 25px;
+    }
+    &:hover {
+        background-color: #0080b3;
+    }
+}
+
+.swiper-button-prev {
+    left: 5%;
+}
+
+.swiper-button-next {
+    right: 5%;
+}
+
+// malfunctions-washing-machine
+.malfunctions-washing-machine__wrapp {
+    position: relative;
+    width: 272px;
+    height: 350px;
+    @include flex(column, flex-start, center);
+    .malfunctions-washing-machine__header {
+        padding: 0 13px;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 72px;
+        background-color: #D7DEED;
+        border-radius: 10px 10px 0 0;
+        @include flex(row, space-between, center);
+        .malfunctions-washing-machine__header-bg-center {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 52px;
+            height: 60px;
+            background-color: #AFB9D2;
+            border-radius: 0px 0px 30px 30px;
+        }
+        .malfunctions-washing-machine__box {
+            position: relative;
+            width: 78px;
+            height: 48px;
+            background-color: #C7CFE2;
+            border-radius: 5px;
+            .malfunctions-washing-machine__box-handle {
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 39px;
+                height: 12px;
+                background-color: #AFB9D2;
+                border-radius: 3px 3px 0px 0px;
+            }
+        }
+        .malfunctions-washing-machine__button-center {
+            position: absolute;
+            top: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            width: 25px;
+            height: 25px;
+            background-color: #707487;
+            border-radius: 50%;
+            @include flex(row, center, center);
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                color: #FF6939;
+            }
+        }
+        .malfunctions-washing-machine__buttons-list {
+            @include flex(row, center, center);
+            .malfunctions-washing-machine__buttons-item {
+                &:nth-child(1) {
+                    button {
+                        background-color: #fff;
+                    }
+                }
+                &:nth-child(2) {
+                    margin: 0 13px;
+                    button {
+                        background-color: #FFB600;
+                    }
+                }
+                &:nth-child(3) {
+                    button {
+                        background-color: #E4EAF6;
+                    }
+                }
+                button {
+                    width: 13px;
+                    height: 24px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    .malfunctions-washing-machine__main {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 266px;
+        background-color: #E4EAF6;
+        border-radius: 0 0 10px 10px;
+        .malfunctions-washing-machine-drum__back-bg {
+            position: relative;
+            margin: 19px auto 0;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: #C7CFE2;
+            @include flex(row, center, center);
+            .malfunctions-washing-machine-drum-water__wrap {
+                width: 130px;
+                height: 130px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: transparent;
+                .malfunctions-washing-machine-drum-water {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #01A1DF;
+                    svg {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                    }
+                }
+            }
+            .malfunctions-washing-machine-drum__handle {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 3;
+                width: 155px;
+                height: 155px;
+                background: url('../../img/hundle.svg') no-repeat center;
+            }
+        }
+    }
+    .malfunctions-washing-machine__footer {
+        padding: 0 10px;
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+        height: 18px;
+        @include flex(row,
+        space-between,
+        null);
+        .malfunctions-washing-machine__foot-left,
+        .malfunctions-washing-machine__foot-right {
+            width: 26px;
+            height: 18px;
+            background-color: #AFB9D2;
+            border-radius: 0px 0px 5px 5px;
+        }
+    }
+}
