@@ -6,5 +6,3 @@ import './brands.animation.js';
 import './malfunctions.animation.js';
 import './price.animation.js';
 import './contact.animation.js';
-
-//gsap.registerPlugin(ScrollTrigger);

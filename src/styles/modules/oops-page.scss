@@ -1,0 +1,30 @@
+@import '../utils/main.utils.scss';
+.oops-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include flex(column, flex-start, center);
+}
+
+.oops-text {
+    @include font(30px, 700, 30px, #FF6939);
+}
+
+.opos-bg-phone {
+    width: 30vh;
+    height: 40vh;
+    background: url('../../img/oops-bg.svg') no-repeat;
+    background-size: 100% 100%;
+    @include flex(row,
+    center,
+    center);
+}
+
+.oops-text {
+    @include font(15px,
+    500,
+    15px,
+    #000);
+}

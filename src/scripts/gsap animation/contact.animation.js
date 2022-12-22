@@ -7,8 +7,6 @@ gsap.from(".contact-info", {
         start: "top bottom",
         end: "bottom bottom",
         scrub: true,
-        //markers: true,
-
     }
 });
 
@@ -19,6 +17,5 @@ gsap.from(".contact-form__wrap", {
         start: "top bottom",
         end: "bottom bottom",
         scrub: true,
-        //markers: true,
     }
 });

@@ -1,7 +1,10 @@
 @import '../utils/main.utils.scss';
 .price {
     .container {
-        margin-top: 130px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -10,15 +13,15 @@
         margin: 25px 0;
         @include flex(row, space-between, null);
         .service-name {
-            @include font(25px, 700, 20px, #01A1DF);
+            @include font(3vh, 700, 3vh, #01A1DF);
         }
         .points {
             margin: 0px 5px;
             flex: 1;
-            border-bottom: 4px dotted #01A1DF;
+            border-bottom: 0.4vh dotted #01A1DF;
         }
         .service-price {
-            @include font(25px, 700, 20px, #FF6939);
+            @include font(3vh, 700, 3vh, #FF6939);
         }
     }
 }

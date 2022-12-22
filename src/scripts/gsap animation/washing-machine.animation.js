@@ -13,9 +13,8 @@ gsap.to(".washing-machine__container", {
     x: "center",
 })
 
-gsap.to(".washing-machine__container .washing-machine", {
-    width: 322,
-    height: 350,
+gsap.to(".washing-machine__container svg", {
+    width: '41vh'
 })
 
 // path FROM washing machine 
@@ -27,14 +26,11 @@ gsap.from(".why-we .washing-machine__container", {
         start: "40% top",
         end: "bottom top",
         scrub: true,
-        //markers: true,
     }
 })
 
 gsap.fromTo(".washing-machine__container .washing-machine", {
-    width: 322,
-    height: 350,
-
+    width: '41vh'
 }, {
     width: () => mapSvg.getBoundingClientRect().width,
     height: () => mapSvg.getBoundingClientRect().height,
@@ -43,7 +39,6 @@ gsap.fromTo(".washing-machine__container .washing-machine", {
         start: "40% top",
         end: "bottom top",
         scrub: true,
-        //markers: true,
     }
 })
 
@@ -58,11 +53,5 @@ gsap.to(".why-we .washing-machine__container", {
         start: "30% top",
         end: "bottom top",
         scrub: true,
-        //markers: true,
     }
-})
-
-gsap.to(".why-we .washing-machine__container svg", {
-    /* width: () => WhyWeItemOrangeSvg.offsetWidth,
-    height: () => WhyWeItemOrangeSvg.offsetHeight */
 })

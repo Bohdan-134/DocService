@@ -1,0 +1,110 @@
+[{
+    "nav-why-we": {
+        "uk": "Чому ми?",
+        "ru": "Почему мы?"
+    },
+    "nav-malfunctions": {
+        "uk": "Несправності",
+        "ru": "Неисправности"
+    },
+    "nav-price": {
+        "uk": "Прайс",
+        "ru": "Прайс"
+    },
+    "nav-contact": {
+        "uk": "Контакти",
+        "ru": "Контакты"
+    },
+    "header-title": {
+        "uk": "Ремонт пральних машин <br> з виїздом додому",
+        "ru": "Ремонт стиральных машин <br> с выездом домой"
+    },
+    "header-text": {
+        "uk": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, totam voluptas! Provident aspernatur officiis illum velit dignissimos distinctio unde nostrum libero, ratione modi neque quibusdam placeat consectetur similique fugiat tempore.",
+        "ru": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, totam voluptas! Provident aspernatur officiis illum velit dignissimos distinctio unde nostrum libero, ratione modi neque quibusdam placeat consectetur similique fugiat tempore."
+    },
+    "why-we-title": {
+        "uk": "Чому ми?",
+        "ru": "Почему мы?"
+    },
+    "why-we-item1": {
+        "uk": "Прийом викликів у всі <br> райони Києва",
+        "ru": "Прием вызовов во все <br> районы Киева"
+    },
+    "why-we-item2": {
+        "uk": "Ремонтуємо пральні <br> машини всіх видів та марок",
+        "ru": "Ремонтируем стиральные <br> машины всех видов и марок"
+    },
+    "why-we-item3": {
+        "uk": "Гарантія 1 рік",
+        "ru": "Гарантия 1 год"
+    },
+    "malfunctions-title": {
+        "uk": "Часті несправності пральних машин",
+        "ru": "Частые неисправности стиральных машин"
+    },
+    "malfunctions-btn1": {
+        "uk": "Не зливає воду",
+        "ru": "Не сливает воду"
+    },
+    "malfunctions-btn2": {
+        "uk": "Не набирає води",
+        "ru": "Не набирает воды"
+    },
+    "malfunctions-btn3": {
+        "uk": "Не вмикається",
+        "ru": "Не включается"
+    },
+    "malfunctions-btn4": {
+        "uk": "Не крутить барабан",
+        "ru": "Не крутит барабан"
+    },
+    "malfunctions-btn5": {
+        "uk": "Не гріє воду",
+        "ru": "Не греет воду"
+    },
+    "malfunctions-btn6": {
+        "uk": "Шумить чи стукає",
+        "ru": "Шумит или стучит"
+    },
+    "malfunctions-btn7": {
+        "uk": "Зламалася кнопка",
+        "ru": "Сломалась кнопка"
+    },
+    "price-title": {
+        "uk": "Прайс",
+        "ru": "Прайс"
+    },
+    "contact-title": {
+        "uk": "Контакти",
+        "ru": "Контакты"
+    },
+    "contact-title-info": {
+        "uk": "Інформація",
+        "ru": "Информация"
+    },
+    "contact-info-city": {
+        "uk": "м. Київ",
+        "ru": "г. Киев"
+    },
+    "contact-title-form": {
+        "uk": "Залишити заявку",
+        "ru": "Оставить заявку"
+    },
+    "contact-form-btn": {
+        "uk": "Відправити",
+        "ru": "Отправить"
+    },
+    "i-name-placeholder": {
+        "uk": "Ім'я",
+        "ru": "Имя"
+    },
+    "i-phone-placeholder": {
+        "uk": "Номер телефону",
+        "ru": "Номер телефона"
+    },
+    "i-message-placeholder": {
+        "uk": "Повідомлення",
+        "ru": "Сообщение"
+    }
+}]

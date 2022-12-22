@@ -1,13 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// slide to bottom (start bg-header animation)
-gsap.to(".bg-header", {
-    y: '62%',
-    x: 'center',
-    borderRadius: '50%',
-    duration: 3,
-}, 3.5)
-
 // scroll to bottom bg
 gsap.to(".bg-header__wrap", {
     y: '-20%',
@@ -16,8 +8,6 @@ gsap.to(".bg-header__wrap", {
         start: "top top",
         end: "bottom top",
         scrub: true,
-        //markers: true,
-        id: "scrub"
     }
 });
 

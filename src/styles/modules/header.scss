@@ -1,7 +1,6 @@
 @import '../utils/main.utils.scss';
 .header {
     height: 100vh;
-    max-height: 748px;
     position: relative;
 }
 
@@ -14,10 +13,10 @@
     z-index: -1;
     .bg-header {
         position: absolute;
-        top: -200%;
+        top: -100%;
         left: 50%;
         transform: translate(-50%);
-        border-radius: 45%;
+        border-radius: 50%;
         width: 120%;
         height: 170%;
         background-color: #01A1DF;
@@ -26,32 +25,33 @@
 
 // header-top
 .header-top {
-    padding: 20px 30px;
+    padding: 2vh 30px;
     @include flex(row, space-between, center);
     .phone-btn__wrap {
-        width: 55px;
+        //width: 55px;
         .phone {
-            width: 35px;
-            height: 35px;
+            width: 4.5vh;
+            height: 4.5vh;
             border-radius: 50%;
             background-color: #FF6939;
             color: #fff;
-            animation: scale .7s 3.5s backwards;
             @include flex(row, center, center);
+            i {
+                font-size: 1.8vh;
+            }
         }
     }
     .navigation {
+        width: 60%;
         .navigation-list {
-            width: 710px;
             @include flex(row, space-between, center);
             .navigation-item {
-                width: 107px;
-                text-align: start;
-                @include flex(row, null, center);
+                min-width: 40%;
                 a {
+                    margin: 5%;
                     position: relative;
                     font-family: 'Montserrat';
-                    @include font(15px, 400, 15px, #fff);
+                    @include font(1.8vh, 400, 15px, #fff);
                     &::before {
                         content: '';
                         position: absolute;
@@ -70,37 +70,42 @@
                         }
                     }
                 }
+                &:first-child {
+                    text-align: end;
+                }
+                &:last-child {
+                    text-align: start;
+                }
             }
             .navigation-item.logo-wrap {
-                margin: 0 50px;
                 position: relative;
-                width: 80px;
-                height: 80px;
+                min-width: auto;
+                width: 10.1vh;
+                height: 10.1vh;
                 border-radius: 50%;
                 background-color: #fff;
                 .logo {
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-44%, -48%);
-                }
-                a {
+                    transform: translate(-50%, -50%);
                     &::before {
                         display: none;
+                    }
+                    svg {
+                        width: 6.5vh;
                     }
                 }
             }
         }
     }
-    .lang-btn {
-        padding: 0px 6px;
-        width: 55px;
-        height: 25px;
+    #lang-btn {
+        width: 4.5vh;
+        height: 4.5vh;
         background-color: #FF6939;
-        border-radius: 8px;
-        color: #fff;
-        cursor: pointer;
-        animation: scale .7s 3.7s backwards;
+        border-radius: 50%;
+        @include font(1.7vh, 700, 1.8vh, #fff);
+        @include flex(row, center, center);
     }
 }
 
@@ -112,13 +117,13 @@
         @include flex(column, null, center);
         .header-title {
             text-align: center;
-            @include font(50px, 700, 50px, #fff);
+            @include font(6.4vh, 700, 6.4vh, #fff);
         }
         .header-text {
             margin-top: 20px;
             max-width: 55%;
             text-align: center;
-            @include font(18px, 300, 18px, #fff);
+            @include font(2.3vh, 300, 2.3vh, #fff);
         }
     }
     .container-map__washing-machine {

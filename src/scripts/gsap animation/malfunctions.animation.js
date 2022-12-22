@@ -8,7 +8,6 @@ gsap.to('.malfunctions', {
         duration: 1,
         scrub: true,
         pin: true,
-        //markers: true,
     }
 })
 
@@ -20,7 +19,6 @@ gsap.from('.malfunctions-washing-machine__main', {
         end: 'center top',
         duration: 1,
         scrub: true,
-        //markers: true,
     }
 })
 
@@ -32,7 +30,6 @@ gsap.from('.malfunctions-washing-machine__footer', {
         end: 'center top',
         duration: 1,
         scrub: true,
-        //markers: true,
     }
 })
 
@@ -94,11 +91,8 @@ gsap.from('.malfunctions-washing-machine-drum__back-bg', {
         end: 'center top',
         duration: 1,
         scrub: true,
-        //markers: true,
     }
 })
-
-/////
 
 let watTl = gsap.timeline({
     scrollTrigger: {

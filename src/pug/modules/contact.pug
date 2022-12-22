@@ -1,12 +1,12 @@
 section.contact.section
-    h2.h2 Контакти
+    h2.h2.lan(data-lan="contact-title") Контакти
     .container
         .contact-info
-            h3.contact-h3__title Інформація
+            h3.contact-h3__title.lan(data-lan="contact-title-info") Інформація
             ul.contact-info__list
                 li.contact-info__item
                     i.fa-solid.fa-location-dot
-                    span.contact-info__text м. Київ
+                    span.contact-info__text.lan(data-lan="contact-info-city") м. Київ
                 li.contact-info__item
                     i.fa-solid.fa-clock
                     span.contact-info__text 8:00 - 18:00
@@ -19,9 +19,9 @@ section.contact.section
                     span.contact-info__text
                         a(href="tel:+380374889403") +380374889403
         .contact-form__wrap
-            h3.contact-h3__title Залишити заявку
-            form(action="/").contact-form
-                input(type="text" placeholder="Ім'я").i-name
-                input(type="tel" placeholder="Номер телефону").i-phone
-                textarea(name="", cols="30", rows="6" placeholder="Повідомлення")
-                button(type="submit").send-btn Відправити
+            h3.contact-h3__title.lan(data-lan="contact-title-form") Залишити заявку
+            form(action="/").contact-form#form
+                input(type="text" placeholder="Ім'я" data-lan-placeholder="i-name-placeholder").i-name.lan
+                input(type="text" placeholder="Номер телефону" data-lan-placeholder="i-phone-placeholder").i-phone.lan
+                textarea(name="", cols="30", rows="6" placeholder="Повідомлення" data-lan-placeholder="i-message-placeholder").i-message.lan
+                button(type="submit" data-lan="contact-form-btn").send-btn.lan Відправити

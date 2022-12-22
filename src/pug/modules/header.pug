@@ -8,21 +8,17 @@ header.header
         nav.navigation
             ul.navigation-list 
                 li.navigation-item
-                    a(href="/")#why-we Чому ми?
-                li.navigation-item
-                    a(href="/")#malfunctions Несправності
+                    a(href="/" data-lan="nav-why-we")#why-we.lan Чому ми?
+                    a(href="/" data-lan="nav-malfunctions")#malfunctions.lan Несправності
                 li.navigation-item.logo-wrap
                     a(href="/").logo
                         include ../../img/logo.svg
                 li.navigation-item
-                    a(href="/")#price Прайс
-                li.navigation-item
-                    a(href="/")#contact Контакти
-        select(name="lang").lang-btn
-            option(value="ua" selected) Укр
-            option(value="ru") Рус
+                    a(href="/" data-lan="nav-price")#price.lan Прайс
+                    a(href="/" data-lan="nav-contact")#contact.lan Контакти
+        button(data-language="uk")#lang-btn Укр
     .header-main 
         .container 
-            h1.header-title Ремонт пральних машин <br> з виїздом додому
-            p.header-text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, totam voluptas! Provident aspernatur officiis illum velit dignissimos distinctio unde nostrum libero, ratione modi neque quibusdam placeat consectetur similique fugiat tempore.
+            h1.header-title.lan(data-lan="header-title") Ремонт пральних машин <br> з виїздом додому
+            p.header-text.lan(data-lan="header-text") Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, totam voluptas! Provident aspernatur officiis illum velit dignissimos distinctio unde nostrum libero, ratione modi neque quibusdam placeat consectetur similique fugiat tempore.
         .container-map__washing-machine
