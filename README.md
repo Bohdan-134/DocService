@@ -17,3 +17,6 @@
 
 ## Task manager
 - gulp
+
+## Description
+This project implements page translation using json. Sending the form to the telegram bot also works. Adaptation for mobile devices is not
