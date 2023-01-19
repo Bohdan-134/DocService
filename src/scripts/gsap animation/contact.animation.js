@@ -1,21 +1,20 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.from(".contact-info", {
-    x: '-100%',
-    scrollTrigger: {
-        trigger: ".contact",
-        start: "top bottom",
-        end: "bottom bottom",
-        scrub: true,
-    }
-});
+function animationContactBlock(htmlElement, parentHtmlElement, positionX) {
+    const element = document.querySelector(`${htmlElement}`);
+    const parentElement = document.querySelector(`${parentHtmlElement}`);
+    return (
+        gsap.from(element, {
+            x: `${positionX}`,
+            scrollTrigger: {
+                trigger: parentElement,
+                start: "top bottom",
+                end: "bottom bottom",
+                scrub: true,
+            }
+        })
+    )
+}
 
-gsap.from(".contact-form__wrap", {
-    x: '100%',
-    scrollTrigger: {
-        trigger: ".contact",
-        start: "top bottom",
-        end: "bottom bottom",
-        scrub: true,
-    }
-});
+animationContactBlock('.contact-info', '.contact', '-100%');
+animationContactBlock('.contact-form__wrap', '.contact', '100%');

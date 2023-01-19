@@ -1,13 +1,7 @@
 
 gsap.registerPlugin(ScrollTrigger);gsap.to('.malfunctions',{scrollTrigger:{trigger:'.malfunctions',start:'top top',end:'bottom top',duration:1,scrub:true,pin:true,}})
-gsap.from('.malfunctions-washing-machine__main',{y:35,scrollTrigger:{trigger:'.malfunctions',start:'top top',end:'center top',duration:1,scrub:true,}})
-gsap.from('.malfunctions-washing-machine__footer',{y:60,scrollTrigger:{trigger:'.malfunctions',start:'top top',end:'center top',duration:1,scrub:true,}})
-gsap.from('.malfunctions-washing-machine__box',{y:40,scrollTrigger:{trigger:'.malfunctions',start:'top top',end:'center top',duration:1,scrub:true,}})
-gsap.from('.malfunctions-washing-machine__button-center',{y:50,scrollTrigger:{trigger:'.malfunctions',start:'top top',end:'center top',duration:1,scrub:true,}})
-gsap.from('.malfunctions-washing-machine__header-bg-center',{y:30,scrollTrigger:{trigger:'.malfunctions',start:'top top',end:'center top',duration:1,scrub:true,}})
-gsap.from('.malfunctions-washing-machine__buttons-item',{y:40,scrollTrigger:{trigger:'.malfunctions',start:'top top',end:'center top',duration:1,scrub:true,}})
-gsap.from('.malfunctions-washing-machine-drum__back-bg',{y:40,scrollTrigger:{trigger:'.malfunctions',start:'top top',end:'center top',duration:1,scrub:true,}})
-let watTl=gsap.timeline({scrollTrigger:{trigger:'.malfunctions',start:'top top',end:'center top',duration:1,scrub:true,}})
+function animationScrollWashingMachine(htmlElement,parentHtmlElement,positionY){const element=document.querySelector(`${htmlElement}`);const parentElement=document.querySelector(`${parentHtmlElement}`);return(gsap.from(element,{y:positionY,scrollTrigger:{trigger:parentElement,start:'top top',end:'center top',duration:1,scrub:true,}}))}
+animationScrollWashingMachine('.malfunctions-washing-machine__main','.malfunctions',35);animationScrollWashingMachine('.malfunctions-washing-machine__footer','.malfunctions',60);animationScrollWashingMachine('.malfunctions-washing-machine__box','.malfunctions',40);animationScrollWashingMachine('.malfunctions-washing-machine__button-center','.malfunctions',50);animationScrollWashingMachine('.malfunctions-washing-machine__header-bg-center','.malfunctions',30);animationScrollWashingMachine('.malfunctions-washing-machine__buttons-item','.malfunctions',40);animationScrollWashingMachine('.malfunctions-washing-machine-drum__back-bg','.malfunctions',40);let watTl=gsap.timeline({scrollTrigger:{trigger:'.malfunctions',start:'top top',end:'center top',duration:1,scrub:true,}})
 watTl.from('.malfunctions-washing-machine-drum__handle',{y:60})
 watTl.from('.malfunctions-washing-machine-drum-water',{y:'100%'})
 gsap.from('.swiper-button-next',{x:100,opacity:0,scrollTrigger:{trigger:'.malfunctions',start:'center center',end:'bottom center',duration:1,scrub:true,}})

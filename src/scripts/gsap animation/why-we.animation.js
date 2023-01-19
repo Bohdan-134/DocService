@@ -8,7 +8,6 @@ let tl = gsap.timeline({
         trigger: '.why-we',
         start: "top top",
         end: "bottom top",
-        //markers: true,
         scrub: true,
         pin: true,
     }
@@ -21,7 +20,6 @@ tl.from('.wrap-img.wrap-img__yellow', {
         trigger: '.why-we',
         start: "top top",
         end: "center top",
-        //markers: true,
         scrub: true,
     }
 });
@@ -33,7 +31,6 @@ tl.from('.wrap-img.wrap-img__orange', {
         trigger: '.why-we',
         start: "top top",
         end: "center top",
-        //markers: true,
         scrub: true,
     }
 });
@@ -44,7 +41,6 @@ tl.from(itemText, {
         trigger: '.why-we',
         start: "center center",
         end: "bottom center",
-        //markers: true,
         scrub: true,
     }
 });
@@ -56,7 +52,6 @@ tl.from('.why-we .h2', {
         trigger: '.why-we',
         start: "center center",
         end: "bottom cennter",
-        //markers: true,
         scrub: true,
     }
 })

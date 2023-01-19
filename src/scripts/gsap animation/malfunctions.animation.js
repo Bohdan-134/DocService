@@ -11,88 +11,31 @@ gsap.to('.malfunctions', {
     }
 })
 
-gsap.from('.malfunctions-washing-machine__main', {
-    y: 35,
-    scrollTrigger: {
-        trigger: '.malfunctions',
-        start: 'top top',
-        end: 'center top',
-        duration: 1,
-        scrub: true,
-    }
-})
+function animationScrollWashingMachine(htmlElement, parentHtmlElement, positionY) {
+    const element = document.querySelector(`${htmlElement}`);
+    const parentElement = document.querySelector(`${parentHtmlElement}`);
+    return (
+        gsap.from(element, {
+            y: positionY,
+            scrollTrigger: {
+                trigger: parentElement,
+                start: 'top top',
+                end: 'center top',
+                duration: 1,
+                scrub: true,
+            }
+        })
+    )
+}
 
-gsap.from('.malfunctions-washing-machine__footer', {
-    y: 60,
-    scrollTrigger: {
-        trigger: '.malfunctions',
-        start: 'top top',
-        end: 'center top',
-        duration: 1,
-        scrub: true,
-    }
-})
+animationScrollWashingMachine('.malfunctions-washing-machine__main', '.malfunctions', 35);
+animationScrollWashingMachine('.malfunctions-washing-machine__footer', '.malfunctions', 60);
+animationScrollWashingMachine('.malfunctions-washing-machine__box', '.malfunctions', 40);
+animationScrollWashingMachine('.malfunctions-washing-machine__button-center', '.malfunctions', 50);
+animationScrollWashingMachine('.malfunctions-washing-machine__header-bg-center', '.malfunctions', 30);
+animationScrollWashingMachine('.malfunctions-washing-machine__buttons-item', '.malfunctions', 40);
+animationScrollWashingMachine('.malfunctions-washing-machine-drum__back-bg', '.malfunctions', 40);
 
-gsap.from('.malfunctions-washing-machine__box', {
-    y: 40,
-    scrollTrigger: {
-        trigger: '.malfunctions',
-        start: 'top top',
-        end: 'center top',
-        duration: 1,
-        scrub: true,
-        //markers: true,
-    }
-})
-
-gsap.from('.malfunctions-washing-machine__button-center', {
-    y: 50,
-    scrollTrigger: {
-        trigger: '.malfunctions',
-        start: 'top top',
-        end: 'center top',
-        duration: 1,
-        scrub: true,
-        //markers: true,
-    }
-})
-
-gsap.from('.malfunctions-washing-machine__header-bg-center', {
-    y: 30,
-    scrollTrigger: {
-        trigger: '.malfunctions',
-        start: 'top top',
-        end: 'center top',
-        duration: 1,
-        scrub: true,
-        //markers: true,
-    }
-})
-
-
-
-gsap.from('.malfunctions-washing-machine__buttons-item', {
-    y: 40,
-    scrollTrigger: {
-        trigger: '.malfunctions',
-        start: 'top top',
-        end: 'center top',
-        duration: 1,
-        scrub: true,
-        //markers: true,
-    }
-})
-
-gsap.from('.malfunctions-washing-machine-drum__back-bg', {
-    y: 40,
-    scrollTrigger: {
-        trigger: '.malfunctions',
-        start: 'top top',
-        end: 'center top',
-        duration: 1,
-        scrub: true,
-    }
-})
 
 let watTl = gsap.timeline({
     scrollTrigger: {
@@ -121,7 +64,6 @@ gsap.from('.swiper-button-next', {
         end: 'bottom center',
         duration: 1,
         scrub: true,
-        //markers: true,
     }
 })
 
@@ -134,7 +76,6 @@ gsap.from('.swiper-button-prev', {
         end: 'bottom center',
         duration: 1,
         scrub: true,
-        //markers: true,
     }
 })
 
@@ -146,7 +87,6 @@ gsap.from('.swiper', {
         end: 'bottom top',
         duration: 1,
         scrub: true,
-        //markers: true,
     }
 })
 
@@ -229,8 +169,6 @@ animation3.to('.malfunctions-washing-machine__button-center .fa-sharp', {
 animation3.to('.malfunctions-washing-machine__button-center .fa-sharp', {
     opacity: 0,
 })
-
-
 
 animation3.pause();
 

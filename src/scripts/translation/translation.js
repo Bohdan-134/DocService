@@ -34,18 +34,3 @@ langBtn.addEventListener('click', () => {
     });
 
 })
-
-/* function translator(language) {
-    const langWords = document.querySelectorAll('.lan');
-    getLangJson().then((data) => {
-        langWords.forEach(elem => {
-            for (let key in data) {
-                for (let key2 in data[key]) {
-                    if (elem.getAttribute('data-lan') == key2) elem.innerHTML = data[key][key2][language()];
-                }
-            }
-        })
-    });
-}
-
-langBtn.addEventListener('click', () => translator(languageSwitching)); */
