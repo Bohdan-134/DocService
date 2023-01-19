@@ -2,17 +2,18 @@
 
 <img src="./doc-service.png">
 
-## Links
+### Links
 <b>Figma: </b><a href="https://www.figma.com/file/5Xz43RP1jllLlCMuVjy36Y/Untitled?node-id=0%3A1&t=b2upHoZRzFGLVonu-3">DocService</a>
+<br>
 <b>Website: </b><a href="https://vercel.com/bohdan-134/docservice">DocService</a>
 
-## Preprocessor's
+### Preprocessor's
 - pug
 - scss
 
-## Libraries
+### Libraries
 - GSAP
 - Swiper
 
-## Task manager
+### Task manager
 - gulp
